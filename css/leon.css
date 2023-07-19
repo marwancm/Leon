@@ -43,7 +43,6 @@ body {
     }
 }
 /* end global rules */
-/* start header */
 /* start component */
 .special-heading {
     color: #ebeced;
@@ -68,6 +67,7 @@ body {
     }
 }
 /* end component */
+/* start header */
 .header {
     padding: 20px;
 }
@@ -81,6 +81,7 @@ body {
 }
 .header .links {
     position: relative;
+    cursor: pointer;
 }
 .header .links:hover .icon span:nth-child(2) {
     width: 100%;
@@ -106,7 +107,7 @@ body {
 .header .links .icon span:last-child {
     width: 100%;
 }
-.header .links ul {        
+.header .links ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -118,10 +119,10 @@ body {
     display: none;
     z-index: 1;
 }
-.header .links:hover ul {
+.header .links ul.show {
     display: block;
 }
-.header .links ul::before {        
+.header .links ul::before {
     content: "";
     border-width: 10px;
     border-style: solid;
